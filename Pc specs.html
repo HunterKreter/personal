@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Oshieys PC</title>
+    <style type="text/css">
+
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            max-height: 100%;
+            font-family:Sans-serif;
+            line-height: 1.5em;
+        }
+
+        #nav{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 230px; /* Width of navigation frame */
+            height: 100%;
+            overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+            background: #eee;
+        }
+
+        main{
+            position: fixed;
+            top: 0;
+            left: 230px; /* Set this to the width of the navigation frame */
+            right: 0;
+            bottom: 0;
+            overflow: auto;
+            background: #fff;
+        }
+
+        .innertube{
+            margin: 15px; /* Provides padding for the content */
+        }
+
+        p {
+            color: #555;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul a {
+            color: darkgreen;
+            text-decoration: none;
+        }
+
+        /*IE6 fix*/
+        * html body{
+            padding: 0 0 0 230px; /* Set the last value to the width of the navigation frame */
+        }
+
+        * html main{
+            height: 100%;
+            width: 100%;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+        function generateText(sentenceCount){
+            for (var i=0; i<sentenceCount; i++)
+                document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+        }
+    </script>
+
+</head>
+
+<body>
+
+<main>
+    <div class="innertube">
+
+        <h1>Oshieys PC</h1>
+        <p><b>CPU</b>: i7-7700K</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/61bAXz29%2BkL._SL1280_.jpg"height="150" />
+        <p><b>GPU</b>: Radeon RX 480 8GB</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81WK17JO-aL._SL1500_.jpg"height="150" />
+        <p><b>Motherboard</b>: STRIX Z270E GAMING</p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71%2BNPIbpulL._SL1200_.jpg"height="150">
+        <p><b>RAM(16GB)</b>: Corsair Vengeance LPX 16GB </p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/91y9OuiJ2zL._SL1500_.jpg"height="150">
+        <p><b>Case</b>: NZXT S340 Mid Tower Computer </p>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71RA-LW1fQL._SL1500_.jpg"height="150">
+
+    </div>
+</main>
+
+<nav id="nav">
+    <div class="innertube">
+
+        <h3>Parts Links</h3>
+        <ul>
+            <p><a href = "http://amzn.to/2vT3GL8)" ... attributes-list>CPU</a></p>
+            <p><a href = "http://amzn.to/2wrIKfF)" ... attributes-list>GPU</a></p>
+            <p><a href = "http://amzn.to/2vT2tmU)" ... attributes-list>Motherboard</a></p>
+            <p><a href = "http://amzn.to/2ijYpHN)" ... attributes-list>RAM (16GB)</a></p>
+            <p><a href = "http://amzn.to/2vYdz8K)" ... attributes-list>Case</a></p>
+    </div>
+</nav>
+
+</body>
+</html>
